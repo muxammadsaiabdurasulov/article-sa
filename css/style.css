@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: #1e90ff dotted 2px;
+    outline-offset: 2px;
+}
+
+html {
+   height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Bebas Neue', 'cursive';
+    font-size: 18px;
+    color: #222;
+    line-height: 24px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-left: auto;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* RETINA BACKGROUND IMG */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+.hero {
+    background-image: url('../img/showcase-hero@2x.png');
+}
+}
+
+.global-wrapper {
+    flex-grow: 1;
+    display: flex;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/showacse-hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+
+.hero-content {
+    width: 285px;
+}
+
+.hero-heading {
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.hro-link {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #1e90ff;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.hro-link:hover {
+    opacity: 0.8;
+}
+
+.hro-link:active {
+    opacity: 0.6;
+}
+
+.hero-link-inner::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    background-image: url('../img/star-svg.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-link-inner {
+    display: flex;
+    padding: 12px 24px;
+}
+
+.hero-link-text {
+
+}
+
+.latest-videos {
+    max-width: 600px;
+    width: 100%;
+    padding: 54px;
+}
+
+.latest-videos-heading {
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.latest-videos-divider {
+    border: 1px solid #999;
+    margin-bottom: 24px;
+}
+
+.latest-videos-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+.latest-videos-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.item-latest-videos {
+    display: flex;
+    align-items: center;
+    width: 492px;
+}
+
+.item-latest-videos-img {
+    display: flex;
+    width: 160px;
+    height: 90px;
+    object-fit: cover;
+    margin-right: 16px;
+}
+
+.item-latest-videos-heading {
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.item-latest-videos-link {
+    text-decoration: none;
+    color: #222;
+    display: inline-block;
+}
+
+.item-latest-videos-link:hover {
+    color: #1e90ff;
+} 
+
+.item-latest-videos-link:active {
+    color: #1e90ff;
+    opacity: 0.6;
+} 
+
+.item-latest-videos-meta {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.item-latest-videos-icon::before {
+    content: '';
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.item-latest-videos-published-at {
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.item-latest-videos-published-at::before {
+    background-image: url('../img/icon-clock.svg');
+}
+
+.item-latest-videos-views {
+    display: flex;
+    align-items: center;
+}
+
+.item-latest-videos-views::before {
+    background-image: url('../img/Vector.svg');
+}
+ 
+.load-more-button {
+    border: 0;
+    background-color: #1e90ff;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.load-more-button:hover {
+    background-color: #1e90ff;
+    opacity: 0.8;
+}
+
+.load-more-button:active {
+    background-color: #1e90ff;
+    opacity: 0.6;
+}
